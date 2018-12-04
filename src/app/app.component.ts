@@ -24,6 +24,6 @@ export class AppComponent  {
   }
 
   onFieldUpdate(data) {
-    console.log(data)
+    console.log(data);
   }
 }
