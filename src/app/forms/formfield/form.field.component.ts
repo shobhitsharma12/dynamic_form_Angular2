@@ -15,7 +15,9 @@ export class FormFieldComponent implements IValueGenerator {
 
   constructor() {
   }
-
+  ngOnInit(){
+    // console.log(this.formField);
+  }
   public getValue() {
     return this.simpleField.getValue();
   }

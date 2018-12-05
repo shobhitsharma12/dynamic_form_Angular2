@@ -1,8 +1,8 @@
 <ng-container>
-  <label *ngIf="field.label">
-    {{field.label}}
+  <label *ngIf="field">
+    {{input}}
   </label>
   <input #inputDOM
     (change)="handleChange($event)"
-  />
+  /><br />
 </ng-container>

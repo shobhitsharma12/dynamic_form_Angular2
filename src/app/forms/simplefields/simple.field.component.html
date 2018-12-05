@@ -1,8 +1,44 @@
-<ng-container [ngSwitch]="field.type">
+<ng-container [ngSwitch]="field">
   <string-field #simpleField
-    *ngSwitchCase="'string'"
+    *ngSwitchCase="'text'"
     [field]="field"
     [input]="input"
     (onChange)="handleChange($event)"
   ></string-field>
-</ng-container>
+  <string-field #simpleField
+  *ngSwitchCase="'email'"
+  [field]="field"
+  [input]="input"
+  (onChange)="handleChange($event)"
+  ></string-field>
+  <string-field #simpleField
+  *ngSwitchCase="'password'"
+  [field]="field"
+  [input]="input"
+  (onChange)="handleChange($event)"
+  ></string-field>
+  <string-field #simpleField
+  *ngSwitchCase="'number'"
+  [field]="field"
+  [input]="input"
+  (onChange)="handleChange($event)"
+  ></string-field>
+  <string-field #simpleField
+  *ngSwitchCase="'checkbox'"
+  [field]="field"
+  [input]="input"
+  (onChange)="handleChange($event)"
+  ></string-field>
+  <string-field #simpleField
+  *ngSwitchCase="'radio'"
+  [field]="field"
+  [input]="input"
+  (onChange)="handleChange($event)"
+  ></string-field>
+  <string-field #simpleField
+  *ngSwitchCase="'button'"
+  [field]="field"
+  [input]="input"
+  (onChange)="handleChange($event)"
+  ></string-field>
+  </ng-container>

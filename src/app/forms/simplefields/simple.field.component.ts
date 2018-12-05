@@ -17,7 +17,11 @@ export class SimpleFieldComponent implements IValueGenerator {
   }
 
   ngAfterViewInit() {
-    console.log(this.simpleFields)
+    // console.log(this.simpleFields);
+    // console.log("type");
+    // console.log(this.field);
+    // console.log("label");
+    // console.log(this.input);
   }
 
   /**

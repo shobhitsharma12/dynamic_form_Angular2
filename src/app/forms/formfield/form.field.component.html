@@ -1,6 +1,8 @@
+<span  *ngFor = 'let lst of formField'>
 <simple-field #simpleField
-  [input]="formField.input"
-  [field]="formField.field"
+  [input]="lst.label"
+  [field]="lst.type"
   (onChange)="handleChange($event)"
 >  
 </simple-field>
+</span>

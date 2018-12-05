@@ -11,9 +11,7 @@ export class AppComponent  {
   @ViewChild('formField') formField: FormFieldComponent;
 
   name = 'Angular';
-  private field: any = { label: 'Dynamic Label', type: 'string' };
-  private input: any = { type: 'radio' }
-  public formFieldConfig: any = { field: this.field, input: this.input }
+  public formFieldConfig: any[] = [{ label: 'Name', type: 'text' },{ label: 'Email', type: 'email' },{ label: 'Password', type: 'password' },{ label: 'Number', type: 'number' },{ label: 'Male', type: 'radio' },{ label: 'Female', type: 'radio' },{ label: 'Cricket', type: 'checkbox' },{ label: 'football', type: 'checkbox' },{ label: 'chess', type: 'checkbox' },{ label: 'submit', type: 'button' }];
 
   ngAfterViewInit() {
     const self = this;

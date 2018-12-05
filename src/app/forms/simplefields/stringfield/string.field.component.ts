@@ -17,12 +17,16 @@ export class StringFieldComponent extends SimpleFieldComponent {
   }
 
   ngAfterViewInit() {
-    if (this.input) {
-      Object.keys(this.input).map(key => {
-        this.inputDOM.nativeElement[key] = this.input[key];
-      })
-    }
-    this.inputDOM.nativeElement.type = 'input';
+    // console.log(this.input);
+    // var datap;
+    // if (this.input) {
+    //   Object.keys(this.input).map(key => {
+    //     this.inputDOM.nativeElement[key] = this.input[key];
+    //     datap = this.inputDOM.nativeElement[key];
+    //   })
+    // }
+    // console.log(datap);
+    this.inputDOM.nativeElement.type = this.field;
   }
 
   private getCurrentValue() {
